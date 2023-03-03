@@ -1,0 +1,2 @@
+# lib-assurbanipal
+Assurbanipal project
