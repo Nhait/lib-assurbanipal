@@ -57,19 +57,6 @@ header
 {
     color: #F2F2F2;
     text-decoration: none;
-    background-color: #8C1818;
-    border-radius: 3px;
-    padding: 15px;
-    margin-right: 20px;
-    box-shadow: 1px 0px 3px 0.1px #8C1818;
-    transition: background-color, 0.3s;
-    font-size: 14px;
-}
-
-.header-link-register
-{
-    color: #F2F2F2;
-    text-decoration: none;
     background-color: #03570a;
     border-radius: 3px;
     padding: 15px;
@@ -79,14 +66,27 @@ header
     font-size: 14px;
 }
 
+.header-link-register
+{
+    color: #F2F2F2;
+    text-decoration: none;
+    background-color: #0648d8;
+    border-radius: 3px;
+    padding: 15px;
+    margin-right: 20px;
+    box-shadow: 1px 0px 3px 0.1px #0648d8;
+    transition: background-color, 0.3s;
+    font-size: 14px;
+}
+
 .header-link-register:hover
 {
-    background-color: #078111;
+    background-color: #1e60ee;
 }
 
 .header-link-login:hover
 {
-    background-color: #d12525;
+    background-color: #068110;
 }
 
 
