@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <title>Assurbanipal</title>
+    <title>Assurbanipal - Inscription</title>
 </head>
 <body>
     <header>
@@ -28,12 +28,25 @@
             <a class="header-link-register" href="register.html">Inscription</a>
         </div>
     </header>
-        <main class="main-container-content">
-            <div class="main-container-text">
-            </div>
+    <main class="main-container-content">
+        <div class="main-container-text">
+            <h2>Inscription</h2>
+            <span>Merci de remplir les champs-ci-dessous pour créer votre compte.</br>Une validation de la part d'un administrateur sera nécessaire.</span>
+        </div>
+            <form action="#" method="post" class="register-form">
+                <label for="register_username" class="register-form-label">Nom d'utilisateur</label>
+                <input type="text" id="register_password" name="register_password" class="register-form-field">
 
-            </div>
-        </main>
-    </div>
+                <label for="register_password" class="register-form-label">Mot de passe</label>
+                <input type="password" id="register_username" name="register_username" class="register-form-field">
+
+                <label for="register_password_check" class="register-form-label">Confirmation du mot de passe</label>
+                <input type="password" id="register_password_check" name="register_password_check" class="register-form-field">
+
+                <label for="register_email" class="register-form-label">Adresse email</label>
+                <input type="email" id="register_email" name="register_email" class="register-form-field">
+            </form>
+        </div>
+    </main>
 </body>
 </html>
