@@ -233,3 +233,25 @@ header
     resize: none;
 }
 /***** STYLES GENERAUX POUR FORMULAIRES *****/
+
+
+
+/***** TORRENTS *****/
+.torrents-header
+{
+    background-color: yellow;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--midblue-clr);
+    color: var(--white-clr);
+    box-shadow: 2px 2px 3px 0.5px var(--midblue-clr);
+    line-height: 1.8;
+}
+
+.torrents-container
+{
+    margin-top: 25px;
+    background-color: var(--lightblue-clr);
+    color: var(w);
+}
