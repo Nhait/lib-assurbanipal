@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Assurbanipal - Contact</title>
+</head>
+<body>
+    <header>
+        <img src="img/assurbanipal.png" alt="Logo Assurbanipal" class="header-banner">
+        <nav class="header-menu">
+            <a href="index.html" class="header-menu-link">Accueil</a>
+            <a href="torrents.html" class="header-menu-link">Torrents</a>
+            <a href="files.html" class="header-menu-link">Fichiers</a>
+            <a href="medias.html" class="header-menu-link">Médias</a>
+            <a href="contact.html" class="header-menu-link">Contact</a>
+            <a href="misc.html" class="header-menu-link">Divers</a>    
+        </nav>
+    <div class="header-btn-container">
+        <a href="register.html" class="header-btn-register">Inscription</a>
+        <a href="login.html" class="header-btn-login">Connexion</a>
+    </div>
+</header>
+<main class="main-container">
+    <div class="form-header">
+        <h1>Contact</h1>
+        <p>Des suggestions ou un problème à signaler ? Vous pouvez utiliser le formulaire ci-dessous !</p>
+    </div>
+    <div class="form-container">
+        <form class="form-content" action="#" method="POST">
+            <div class="form-row">
+                <label for="contact-name">Nom complet</label>
+                <input id="contact-name" name="contact-name" type="text" placeholder="Votre nom"/>    
+            </div>
+            <div class="form-row">
+                <label for="contact-email">Adresse email</label>
+                <input id="contact-email" name="contact-email" type="email" placeholder="Votre email"/>    
+            </div>
+            <div class="form-row">
+                <label for="contact-reason">Je souhaite...</label>
+                <select id="contact-reason" name="contact-reason">
+                    <option value="sub_idea">Soumettre une idée</option>
+                    <option value="sub_information">Demander une information</option>
+                    <option value="err_accout">Remonter un problème avec mon compte</option>
+                    <option value="err_file">Remonter un problème avec un fichier</option>
+                </select>   
+            </div>
+            <div class="form-row">
+                <label for="contact-message">Message</label>
+                <textarea id='contact-message' name='contact-message'></textarea>   
+            </div>
+            <div class="form-buttons">
+                <button type="submit" class="form-btn-send">Envoyer</button>
+                <button type="reset" class="form-btn-reset">Réinitialiser</button>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+        
+</footer>
+</body>
+</html>

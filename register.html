@@ -12,41 +12,56 @@
 </head>
 <body>
     <header>
-        <div class="header-logo">
-            <img class="header-logo-img" src="img/assurbanipal.png" alt="Logo Assurbanipal">
-        </div>
-        <div class="header-menu">
-            <a class="header-menu-text" href="index.html">Accueil</a>
-            <a class="header-menu-text" href="torrents.html">Torrents</a>
-            <a class="header-menu-text" href="files.html">Fichiers</a>
-            <a class="header-menu-text" href="medias.html">Médias</a>
-            <a class="header-menu-text" href="book.html">Annuaire</a>
-            <a class="header-menu-text" href="#">Work in Progress</a>
-        </div>
-        <div class="header-links">
-            <a class="header-link-login" href="">Connexion</a>
-            <a class="header-link-register" href="register.html">Inscription</a>
+            <img src="img/assurbanipal.png" alt="Logo Assurbanipal" class="header-banner">
+            <nav class="header-menu">
+                <a href="index.html" class="header-menu-link">Accueil</a>
+                <a href="torrents.html" class="header-menu-link">Torrents</a>
+                <a href="files.html" class="header-menu-link">Fichiers</a>
+                <a href="medias.html" class="header-menu-link">Médias</a>
+                <a href="contact.html" class="header-menu-link">Contact</a>
+                <a href="misc.html" class="header-menu-link">Divers</a>    
+            </nav>
+        <div class="header-btn-container">
+            <a href="register.html" class="header-btn-register">Inscription</a>
+            <a href="login.html" class="header-btn-login">Connexion</a>
         </div>
     </header>
-    <main class="main-container-content">
-        <div class="main-container-text">
-            <h2>Inscription</h2>
-            <span>Merci de remplir les champs-ci-dessous pour créer votre compte.</br>Une validation de la part d'un administrateur sera nécessaire.</span>
+    <main class="main-container">
+        <div class="form-header">
+            <h1>Inscription</h1>
+            <p>Merci de remplir les champs ci-dessous pour créer votre compte, une validation par un administrateur sera requise.</p>
         </div>
-            <form action="#" method="post" class="register-form">
-                <label for="register_username" class="register-form-label">Nom d'utilisateur</label>
-                <input type="text" id="register_password" name="register_password" class="register-form-field">
-
-                <label for="register_password" class="register-form-label">Mot de passe</label>
-                <input type="password" id="register_username" name="register_username" class="register-form-field">
-
-                <label for="register_password_check" class="register-form-label">Confirmation du mot de passe</label>
-                <input type="password" id="register_password_check" name="register_password_check" class="register-form-field">
-
-                <label for="register_email" class="register-form-label">Adresse email</label>
-                <input type="email" id="register_email" name="register_email" class="register-form-field">
+        <div class="form-container">
+            <form class="form-content" action="#" method="POST">
+                <div class="form-row">
+                    <label for="contact-name">Nom d'utilisateur</label>
+                    <input id="contact-name" name="contact-name" type="text" placeholder="Votre nom" required/>    
+                </div>
+                <div class="form-row">
+                    <label for="register-password">Mot de passe</label>
+                    <input id="register-password" name="register-password" type="password" placeholder="Choisissez un mot de passe fort" required/>    
+                </div>
+                <div class="form-row">
+                    <label for="register-passwordcheck">Confirmation du mot de passe</label>
+                    <input id="register-passwordcheck" name="register-passwordcheck" type="password" placeholder="Renseignez à nouveau le mot de passe" required/>    
+                </div>
+                <div class="form-row">
+                    <label for="register-email">Adresse email</label>
+                    <input id="register-email" name="register-email" type="email" placeholder="Votre adresse email" required/>    
+                </div>
+                <div class="form-row">
+                    <label for="register-emailcheck">Confirmation de l'email</label>
+                    <input id="register-emailcheck" name="register-emailcheck" type="email" placeholder="Confirmez votre adresse email" required/>    
+                </div>
+                <div class="form-buttons">
+                    <button type="submit" class="form-btn-send">Valider</button>
+                    <button type="reset" class="form-btn-reset">Réinitialiser</button>
+                </div>
             </form>
         </div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
