@@ -5,6 +5,7 @@
     --lightblue-clr: #0476D9;
     --darkblue-clr: #010A26;
     --grey-clr: #393E46;
+    --lightgrey-clr: #555961;
     --black-clr: #16181F;
     --gold-clr: #E6AB28;
 }
@@ -17,11 +18,13 @@
     box-sizing: border-box;
 }
 
-body
+html, body
 {
     background-color: var(--white-clr);
     font-family: 'Roboto', Helvetica, sans-serif;
+    height: 100%;
 }
+
 
 
 /***** HEADER *****/
@@ -243,7 +246,7 @@ header
     width: 100%;
     text-align: center;
     padding: 15px;
-    background-color: var(--midblue-clr);
+    background-color: var(--grey-clr);
     color: var(--white-clr);
     box-shadow: 2px 2px 3px 0.5px var(--midblue-clr);
     line-height: 1.8;
@@ -251,7 +254,81 @@ header
 
 .torrents-container
 {
-    margin-top: 25px;
-    background-color: var(--lightblue-clr);
-    color: var(w);
+    background-color: var(--lightgrey-clr);
+    color: var(--white-clr);
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.main-container
+{
+    height: 100%;
+}
+
+.main-separator
+{
+    border: 3px solid var(--black-clr);
+}
+
+.main-table
+{
+    width: 75%;
+    margin: 0 auto;
+    border: 2px solid var(--white-clr);
+    border-collapse: collapse;
+}
+
+.main-table thead
+{
+    background-color: darkred;
+}
+
+.main-table thead td
+{
+    border: 1px solid var(--white-clr);
+}
+
+.main-table td
+{
+    padding: 15px;
+    border: 1px solid var(--white-clr);
+}
+
+.main-table tr
+{
+    border: 1px solid var(--white-clr);
+}
+
+.torrents-table-dl
+{
+    color: var(--black-clr);
+    background-color: var(--gold-clr);
+    padding: 8px;
+    box-shadow: 1px 0px 1px 0.1px var(--gold-clr);
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.1s ease;
+}
+
+.torrents-table-dl:hover
+{
+    background-color: #f0ba45;
+}
+
+.main-search-bar
+{
+    margin-top: 20px;
+    width: 250px;
+    padding: 5px;
+    border-radius: 4px;
+    padding: 4px;
+    outline: none;
+    transition: width 0.3s ease;
+}
+
+.main-search-bar:focus
+{
+    width: 450px;
+    border: 2px solid var(--lightblue-clr);
 }
